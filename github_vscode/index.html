@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>VSCodeでGitを使ってみよう</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container my-5">
+    <div class="card">
+      <div class="card-header">
+        <h2>事前準備</h3>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">VSCodeの拡張機能「GitHub Pull Requests and Issues」をインストール</li>
+        <li class="list-group-item">ALGYAN Webサイトリポジトリ（もしくは他の公開リポジトリ）からフォークして自分のリポジトリを作成</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h2>1. GitHubリポジトリをクローン</h3>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <div class="row my-2">
+            <div class="col-sm-12">
+              <h4>1-1. VSCodeのコマンドパレットを開く</h4>
+            </div>
+            <div class="col-sm-12">
+              <p style="margin-bottom:0;">Windowsの場合は「Ctrl + Shift + p」、Macの場合は「Cmd + Shift + p」</p>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row my-2">
+            <div class="col-sm-12 mb-2">
+              <h4>1-2. Gitで検索し、「Git: Clone」を選択</h4>
+            </div>
+            <div class="col-sm-12">
+              <img class="w-100" src="../assets/img/vscode_github/command_palette.png">
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row my-2">
+            <div class="col-sm-12 mb-2">
+              <h4>1-3. GitHubリポジトリのURLを入力</h4>
+            </div>
+            <div class="col-sm-12 mb-2">
+              <img class="w-100" src="../assets/img/vscode_github/github_url.png">
+            </div>
+            <div class="col-sm-12">
+              <p>PCの任意のフォルダを選択。選択した場所にリポジトリがcloneされます。</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h2>2. 修正 + コミット</h3>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <div class="row my-2">
+            <div class="col-sm-12 mb-2">
+              <h4>2-1. 修正を加える</h4>
+            </div>
+            <div class="col-sm-12">
+              <p>リポジトリ内のファイルに対して適当に修正を加えます。</p>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row my-2">
+            <div class="col-sm-12 mb-2">
+              <h4>2-2. 修正したファイルをステージングエリアに追加。</h4>
+            </div>
+            <div class="col-sm-12">
+              <img class="w-100" src="../assets/img/vscode_github/staging.png">
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row my-2">
+            <div class="col-sm-12 mb-2">
+              <h4>2-3. コミット</h4>
+            </div>
+            <div class="col-sm-12">
+              <p>差分を確認、コメントを記入しコミットします。</p>
+            </div>
+            <div class="col-sm-12 mb-2">
+              <img class="w-100" src="../assets/img/vscode_github/commit.png">
+            </div>
+            
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h2>3. Push</h3>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <div class="row my-2">
+            <div class="col-sm-12">
+              <h4>3-1. Push</h4>
+            </div>
+            <div class="col-sm-12">
+              <p>cloneの時と同様な手順でコマンドパレットから「Git: push」を選択。</p>
+            </div>
+            <div class="col-sm-12">
+              <img class="w-100" src="../assets/img/vscode_github/push.png">
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h2>4. プルリクエスト</h3>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <div class="row my-2">
+            <div class="col-sm-12 mb-2">
+              <h4>4-1. アクティビティバーの「GitHub」からプルリクエストを作成</h4>
+            </div>
+            <div class="col-sm-12">
+              <img class="w-100" src="../assets/img/vscode_github/pullrequest1.png">
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row my-2">
+            <div class="col-sm-12 mb-2">
+              <h4>4-2. フォーク元のレポジトリを選択</h4>
+            </div>
+            <div class="col-sm-12">
+              <img class="w-100" src="../assets/img/vscode_github/pullrequest2.png">
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row my-2">
+            <div class="col-sm-12">
+              <h4>4-3 修正したブランチを入力してEnterキーを押す</h4>
+            </div>
+            <div class="col-sm-12">
+              <img class="w-100" src="../assets/img/vscode_github/pullrequest3.png">
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row my-2">
+            <div class="col-sm-12">
+              <h4>カスタムメッセージを選択し、コメントを入力</h4>
+            </div>
+            <div class="col-sm-12">
+              <img class="w-100" src="../assets/img/vscode_github/pullrequest4.png">
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
